@@ -1,5 +1,4 @@
 import React from "react";
-import { useSearchParams } from "react-router-dom";
 import { DisplaySearch } from "../components/DisplaySearchedJobs";
 
 const SearchPage = () => {
