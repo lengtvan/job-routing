@@ -12,7 +12,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import useSearch from "../contexts/useSearch";
-import { DisplaySearch } from "./DisplaySearchedJobs";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -58,7 +57,7 @@ export default function ButtonAppBar() {
   let location = useLocation();
   let navigate = useNavigate();
   const auth = useAuth();
-  const { q, setQ, searchJobs } = useSearch();
+  const { q, setQ } = useSearch();
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">

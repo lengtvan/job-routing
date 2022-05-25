@@ -9,13 +9,8 @@ const JobList = () => {
   const [page, setPage] = useState(1);
   console.log("jobs", jobs);
   //jobs.slice
-  const totalJobs = jobs.length;
   let limit = 5;
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(5);
   const turnPage = () => {
-    setX((x) => (x += 5));
-    setY((y) => (y += 5));
     setPage(page + 1);
   };
   return (
