@@ -1,6 +1,6 @@
 // /* eslint-disable no-unused-vars */
 import { useForm, Controller } from "react-hook-form";
-import React, { useState } from "react";
+import React from "react";
 import { TextField, Box } from "@mui/material";
 
 import Button from "@mui/material/Button";
@@ -28,13 +28,7 @@ export default function LoginModal() {
   let location = useLocation();
   console.log(location);
   let from = location.state?.from?.pathname || "/";
-  const {
-    register,
-    handleSubmit,
-    control,
-    setError,
-    formState: { errors, isSubmitting },
-  } = methods;
+  const { handleSubmit, control } = methods;
   const navigate = useNavigate();
   const onSubmit = (data) => {
     console.log(data);
